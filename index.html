@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
+
+      body {
+        font-family: "Raleway", sans-serif;
+        background-color: #d8dada;
+        font-size: 19px;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 3%;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      header {
+        width: 98%;
+      }
+
+      #logo {
+        max-width: 120px;
+        margin: 3% 0 3% 3%;
+        float: left;
+      }
+
+      #wrapper {
+        background-color: #bbbcbd;
+      }
+
+      #social {
+        float: right;
+        margin: 3% 2% 4% 3%;
+        list-style-type: none;
+      }
+
+      #social > li {
+        display: inline;
+      }
+
+      #social > li > a > img {
+        max-width: 35px;
+      }
+      h1,
+      p {
+        margin: 3%;
+      }
+      #more {
+        display: none;
+      }
+      #myBtn {
+        cursor: pointer;
+        float: right;
+        margin: 0 2% 4% 0;
+        background-color: #303840;
+        color: #f6faff;
+        text-decoration: none;
+        font-weight: 800;
+        padding: 8px 12px;
+        border-radius: 8px;
+        letter-spacing: 2px;
+      }
+
+      hr {
+        height: 1px;
+        background-color: #303840;
+        clear: both;
+        width: 96%;
+        margin: auto;
+      }
+
+      #contact {
+        text-align: center;
+        padding-bottom: 3%;
+        line-height: 16px;
+        font-size: 12px;
+        color: #303840;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <div id="logo">
+          <img
+            src="https://www.budindia.com/images/logo-dark2x1.png"
+            alt="logo"
+          />
+        </div>
+        <div>
+          <ul id="social">
+            <li>
+              <a href="https://www.budindia.com/" target="_blank"
+                ><img src="./img/circle-facebook.png" alt="fb"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.budindia.com/" target="_blank"
+                ><img src="./img/circle-instagram.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/company/budindia/"
+                target="_blank"
+                ><img src="./img/circle-linkedin.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.budindia.com/" target="_blank"
+                ><img src="./img/circle-youtube.png" alt="yt"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <div id="banner">
+        <img
+          src="https://mdbgo.io/dawidadach/responsiveemail/img/banner.png"
+          alt=""
+        />
+      </div>
+      <div class="one">
+        <h1>We, at bud create miracles in digital space!</h1>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum,
+          eligendi beatae veniam totam ab quos. Ipsum expedita facilis
+          praesentium voluptates quam at provident laborum eum, id, culpa nulla
+          veniam nobis.
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure non
+          exercitationem maxime nostrum <span id="dots">...</span>
+          <span id="more"
+            >eaque eos quaerat libero explicabo id? Temporibus omnis qui dolorum
+            provident debitis voluptatum veritatis ipsa necessitatibus mollitia
+            quaerat consequuntur, quibusdam quasi nam? Similique voluptas
+            voluptatibus natus assumenda.</span
+          >
+        </p>
+        <button onclick="myFunction()" id="myBtn">Read more</button>
+        <!-- <a href="#" class="btn">Read more</a> -->
+
+        <hr />
+
+        <footer>
+          <p id="contact">
+            Bud Creative Ad Agency<br />
+            No.4C-303, 2nd Floor,<br />
+            OMBR Layout Main Road,<br />
+            contact@budindia.com
+          </p>
+        </footer>
+      </div>
+    </div>
+    <script>
+      function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less";
+          moreText.style.display = "inline";
+        }
+      }
+    </script>
+  </body>
+</html>
